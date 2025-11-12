@@ -7,6 +7,10 @@
 import Foundation
 
 class DeveloperPreview {
+    
+    static let shared = DeveloperPreview()
+    
+    
     var listings:[Listing] = [
         .init(id: NSUUID().uuidString,
               owernerUid: NSUUID().uuidString,

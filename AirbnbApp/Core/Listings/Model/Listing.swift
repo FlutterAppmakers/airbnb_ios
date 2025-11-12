@@ -5,7 +5,7 @@
 //  Created by Khawla Zarrami on 12/11/2025.
 //
 
-struct Listing : Identifiable, Codable {
+struct Listing : Identifiable, Codable, Hashable {
     let id: String
     let owernerUid: String
     let ownerName: String
@@ -88,7 +88,7 @@ enum ListingAmenities: Int, Codable, Identifiable, Hashable {
         case .kitchen: return "fork.knife"
         case .wifi: return "wifi"
         case .laundry: return "washer"
-        case .tv: return "Tv"
+        case .tv: return "tv"
         case .alarmSystem: return "checkerboard.shield"
         case .office: return "pencil.and.ruler.fill"
         case .balcony: return "building"
